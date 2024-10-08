@@ -1,0 +1,18 @@
+modLoader="javafml"
+loaderVersion="[34,)"
+license="All rights reserved"
+issueTrackerURL=""
+
+[[mods]]
+	modId = "examplemod"
+	version = "0@VERSION@"
+	displayName = "ExampleMod"
+	description = "An example mod."
+	logoFile = ""
+	authors = ""
+	displayURL = ""
+
+[[dependencies.packagedauto]]
+	modId="forge"
+	versionRange="[34,)"
+	mandatory=true
