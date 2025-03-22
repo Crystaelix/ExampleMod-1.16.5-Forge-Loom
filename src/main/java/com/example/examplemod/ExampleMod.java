@@ -19,7 +19,7 @@ public class ExampleMod {
 	}
 
 	@SubscribeEvent
-	private void setup(FMLCommonSetupEvent event){
+	public void setup(FMLCommonSetupEvent event) {
 		LOGGER.info("Hello from " + MOD_ID);
 	}
 }

@@ -39,8 +39,15 @@ version = mod_version
 group = mod_group
 archivesBaseName = "${mod_name}-1.16.5"
 
+sourceSets {
+	main
+}
+
 java {
-	toolchain.languageVersion = JavaLanguageVersion.of(8)
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(8)
+		vendor = JvmVendorSpec.AZUL
+	}
 	withSourcesJar()
 }
 
@@ -124,10 +131,6 @@ jar {
 
 sourcesJar {
 	manifest.attributes(manifestAttributes)
-}
-
-tasks.withType(net.fabricmc.loom.task.RunGameTask).configureEach {
-	javaLauncher.set(javaToolchains.launcherFor(java.toolchain))
 }
 
 // Please refer to Mod Publish Plugin's documentation on how to use the plugin to upload projects to CurseForge/Modrinth.
