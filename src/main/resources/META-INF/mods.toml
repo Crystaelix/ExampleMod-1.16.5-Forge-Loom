@@ -1,7 +1,7 @@
-modLoader="javafml"
-loaderVersion="[34,)"
-license="All rights reserved"
-issueTrackerURL=""
+modLoader = "javafml"
+loaderVersion = "[34,)"
+license = "All Rights Reserved"
+issueTrackerURL = ""
 
 [[mods]]
 	modId = "examplemod"
@@ -12,7 +12,7 @@ issueTrackerURL=""
 	authors = ""
 	displayURL = ""
 
-[[dependencies.packagedauto]]
-	modId="forge"
-	versionRange="[34,)"
-	mandatory=true
+[[dependencies.examplemod]]
+	modId = "forge"
+	versionRange = "[34,)"
+	mandatory = true
