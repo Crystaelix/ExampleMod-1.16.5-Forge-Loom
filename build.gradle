@@ -84,10 +84,8 @@ dependencies {
 	// Minecraft dependencies, required
 	minecraft "com.mojang:minecraft:1.16.5"
 	mappings loom.layered {
-		mappings("de.oceanlabs.mcp:mcp_config:${mcp_version}@zip") {
-			mappingPath "config/joined.tsrg"
-			fallbackNamespaces "official", "named"
-			mergeNamespace "official"
+		srg("de.oceanlabs.mcp:mcp_config:${mcp_version}@zip") {
+			targetNamespace "named"
 		}
 		officialMojangMappings {
 			skipClassNames = true
