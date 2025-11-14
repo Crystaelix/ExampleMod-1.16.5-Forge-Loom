@@ -84,7 +84,7 @@ dependencies {
 	// Minecraft dependencies, required
 	minecraft "com.mojang:minecraft:1.16.5"
 	mappings loom.layered {
-		srg("de.oceanlabs.mcp:mcp_config:${mcp_version}@zip") {
+		srg {
 			targetNamespace "named"
 		}
 		officialMojangMappings {
